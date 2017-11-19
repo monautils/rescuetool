@@ -96,6 +96,7 @@
 				tx.sign(0, keypair)
 				var rawtx = tx.build().toHex()
 				document.getElementById('output').value = rawtx;
+				document.getElementById('message').innerText = "https://mona.insight.monaco-ex.org/insight/tx/send"
 			} catch(err) {
 				var message = "error: " + err.message
 				document.getElementById('message').innerText = message
